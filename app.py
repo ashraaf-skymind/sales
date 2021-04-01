@@ -4,4 +4,4 @@ import math
 import pandas as pd
 import streamlit as st
 
-st.title('SuperStore Sales Forecasting')
+st.title('Technology sales forecasting')
