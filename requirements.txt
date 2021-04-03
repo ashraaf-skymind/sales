@@ -5,5 +5,4 @@ math
 collections
 numpy
 itertools
-statsmodels
 seaborn
