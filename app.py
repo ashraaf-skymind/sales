@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 import itertools
 # from statsmodels.tsa.stattools import adfuller
-# import seaborn as sns
+import seaborn as sns
 # import statsmodels.api as sm
 # from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 # from statsmodels.tsa.statespace.sarimax import SARIMAX
