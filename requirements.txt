@@ -7,4 +7,3 @@ numpy
 itertools
 statsmodels.tsa.stattools
 seaborn
-statsmodels
