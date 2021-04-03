@@ -1,3 +1,10 @@
 altair
 pandas
 streamlit
+math
+collections
+numpy
+itertools
+statsmodels.tsa.stattools
+seaborn
+statsmodels
