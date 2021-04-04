@@ -34,7 +34,7 @@ with siteHeader:
 with st.beta_expander("DATASET"):
     st.header('SALES FORECASTING DATASET')
     st.text('I found this dataset at...  I decided to work with it because ...')
-    sales_data = pd.read_csv('train.csv')
+    sales_data = pd.read_csv('Superstore.csv')
     # Category = sales_data['Category'].drop_duplicates()
     # select_category = st.sidebar.selectbox('Select Category :',Category)
     technology = sales_data.loc[sales_data['Category'] == 'Technology']
