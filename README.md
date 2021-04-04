@@ -14,8 +14,11 @@ This repo is a simple project on how to forecast time series data using sample s
 - Statsmodels
 - Numpy
 - itertools
+- pipreqs
 
 
+
+Note: pipreqs is required to update the requirement.txt when new import is put in the .py file.
 
 Steps:
 
@@ -25,3 +28,4 @@ Steps:
 4. Clean the dataset (Remove any unrelated cells).
 5. Train the model (SARIMA, LTSM, CNN models).
 6. Deploy the models into streamlit. (Need to request invite as of now, April 2021).
+
