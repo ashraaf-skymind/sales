@@ -28,18 +28,18 @@ modelTraining = st.beta_container()
 
 
 with siteHeader:
-    st.title('Welcome to the A!')
+    st.title('Welcome to the Awesome project!')
     st.text('In this project I look into ... And I try ... I worked with the dataset from ...')
 
 with st.beta_expander("DATASET"):
     st.header('SALES FORECASTING DATASET')
-    st.text('This dataset is taken from tableau sample dataset')
-    sales_data = pd.read_csv('Superstore.csv')
-    Category = sales_data['Category'].drop_duplicates()
-    select_category = st.sidebar.selectbox('Select Category :',Category)
+    st.text('I found this dataset at...  I decided to work with it because ...')
+    sales_data = pd.read_csv('train.csv')
+    # Category = sales_data['Category'].drop_duplicates()
+    # select_category = st.sidebar.selectbox('Select Category :',Category)
     technology = sales_data.loc[sales_data['Category'] == 'Technology']
     st.dataframe(technology)
-    cols = ['Row ID', 'Order ID', 'Ship Date', 'Ship Mode', 'Customer ID', 'Customer Name', 'Segment', 'Country', 'City', 'State', 'Postal Code', 'Region', 'Product ID', 'Category', 'Sub-Category', 'Product Name', 'Quantity', 'Discount', 'Profit']
+    cols = ['Row ID', 'Order ID', 'Ship Date', 'Ship Mode', 'Customer ID', 'Customer Name', 'Segment', 'Country', 'City', 'State', 'Postal Code', 'Region', 'Product ID', 'Category', 'Sub-Category', 'Product Name']
     technology.drop(cols, axis=1, inplace=True)
     technology = technology.sort_values('Order Date')
     technology.isnull().sum()
@@ -262,3 +262,4 @@ with st.beta_expander("SARIMA MODEL"):
 with modelTraining:
     st.header('Model training')
     st.text('In this section you can select the hyperparameters!')
+
