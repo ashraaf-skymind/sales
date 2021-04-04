@@ -24,4 +24,4 @@ Steps:
 3. Explore the dataset.
 4. Clean the dataset (Remove any unrelated cells).
 5. Train the model (SARIMA, LTSM, CNN models).
-6. Compare 
+6. Deploy the models into streamlit. (Need to request invite as of now, April 2021).
