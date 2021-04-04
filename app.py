@@ -39,7 +39,7 @@ with st.beta_expander("DATASET"):
     # select_category = st.sidebar.selectbox('Select Category :',Category)
     technology = sales_data.loc[sales_data['Category'] == 'Technology']
     st.dataframe(technology)
-    cols = ['Row ID', 'Order ID', 'Ship Date', 'Ship Mode', 'Customer ID', 'Customer Name', 'Segment', 'Country', 'City', 'State', 'Postal Code', 'Region', 'Product ID', 'Category', 'Sub-Category', 'Product Name']
+    cols = ['Row ID', 'Order ID', 'Ship Date', 'Ship Mode', 'Customer ID', 'Customer Name', 'Segment', 'Country', 'City', 'State', 'Postal Code', 'Region', 'Product ID', 'Category', 'Sub-Category', 'Product Name', 'Quantity', 'Discount', 'Profit']
     technology.drop(cols, axis=1, inplace=True)
     technology = technology.sort_values('Order Date')
     technology.isnull().sum()
