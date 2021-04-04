@@ -20,7 +20,7 @@ This repo is a simple project on how to forecast time series data using sample s
 
 Note: pipreqs is required to update the requirement.txt when new import is put in the .py file.
 
-Steps:
+## Steps:
 
 1. Make sure to download or create dataset in csv format.
 2. Lauch Jupyter Notebook
